@@ -1,0 +1,12 @@
+<!--
+    Credit to inazaruk @
+    http://stackoverflow.com/questions/6107500/how-to-wrap-lengthy-text-in-a-spinner
+-->
+
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="?android:attr/spinnerDropDownItemStyle"
+    android:singleLine="false"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:ellipsize="marquee" />
