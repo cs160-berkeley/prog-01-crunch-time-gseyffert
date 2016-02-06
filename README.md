@@ -1,3 +1,5 @@
+<img src="https://cdn3.iconfinder.com/data/icons/glypho-signs/64/user-running-512.png" height="400" />
+
 # PROG 01: CrunchTime
 
 CrunchTime is an app that lets you input a number of calories you want to burn and see the resulting number of repetitions or minutes of an exercise you need to perform before you've burned those calories. Alternatively, you can select on of your favorite exercises and CrunchTime will tell you how many calories that will burn. Or, if you're in the mood to try a new exercise, CrunchTime will also show you how much of another exercise you need to do in order to get the same workout.
