@@ -12,11 +12,11 @@ See [CrunchTime in action!] ()
 
 ## Screenshots
 
-<img src="http://imgur.com/dUz4ZXH.png" height="400" />
-<img src="http://imgur.com/itY36Bw.png" height="400" />
+<img src="http://imgur.com/XAqebN5.png" height="400" />
+<img src="http://imgur.com/LbDQWNi.png" height="400" />
 <br />
-<img src="http://imgur.com/VWS0GZQ.png" height="400" />
-<img src="http://imgur.com/pZMWoFK.png" height="400" />
+<img src="http://imgur.com/drIT7JM.png" height="400" />
+<img src="http://imgur.com/ZuOM3gZ.png" height="400" />
 
 ## Acknowledgments
 
