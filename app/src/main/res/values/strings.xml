@@ -1,6 +1,21 @@
 <resources>
     <string name="app_name">Crunch Time</string>
     <string name="action_settings">Settings</string>
+    <string name="is">is...</string>
     <string name="are">are...</string>
-
+    <string-array name="exercises">
+        <item>Calories Burned</item>
+        <item>Pushups</item>
+        <item>Situps</item>
+        <item>Squats</item>
+        <item>Minutes Doing Leg-lifts</item>
+        <item>Minutes Planking</item>
+        <item>Minutes Doing Jumping Jacks</item>
+        <item>Pullups</item>
+        <item>Minutes Cycling</item>
+        <item>Minutes Walking</item>
+        <item>Minutes Jogging</item>
+        <item>Minutes Swimming</item>
+        <item>Minutes Climbing Stairs</item>
+    </string-array>
 </resources>

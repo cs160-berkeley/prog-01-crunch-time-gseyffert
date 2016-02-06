@@ -39,6 +39,22 @@ public class MainActivity extends Activity {
                 "Minutes Climbing Stairs"
         };
 
+        String[] exercises_singular = new String[]{
+                "Calorie Burned",
+                "Pushup",
+                "Situp",
+                "Squat",
+                "Minute Doing Leg-lifts",
+                "Minute Planking",
+                "Minute Doing Jumping Jacks",
+                "Pullup",
+                "Minute Cycling",
+                "Minute Walking",
+                "Minute Jogging",
+                "Minute Swimming",
+                "Minute Climbing Stairs"
+        };
+
         Spinner topSpinner = (Spinner) findViewById(R.id.selectionSpinner);
         TextView rightText = (TextView) findViewById(R.id.rightText);
         ListView valuesList = (ListView) findViewById(R.id.values);
@@ -49,7 +65,8 @@ public class MainActivity extends Activity {
 
         final EditText topAmount = (EditText) findViewById(R.id.firstAmount);
         topAmount.setOnFocusChangeListener(new OnFocusChangeListener(topAmount));
-        topAmount.addTextChangedListener(new InputTextWatcher(topSpinner, valuesList, exercises, rightText));
+        topAmount.addTextChangedListener(new InputTextWatcher(topSpinner, valuesList, exercises,
+                exercises_singular, rightText));
 
         ArrayAdapter<CharSequence> spinnerAdapter = ArrayAdapter.createFromResource(this,
                 R.array.exercises, R.layout.multiline_spinner_dropdown_item);
@@ -93,15 +110,17 @@ class InputTextWatcher implements TextWatcher {
             (100/15f)
     };
     private String[] exercises;
+    private String[] exercises_singular;
     private Spinner spinner;
     private TextView rightText;
     private ListView outputListView;
 
     public InputTextWatcher(Spinner thisSpinner, ListView outputList, String[] exercises,
-                            TextView rightText) {
+                            String[] exercises_singular, TextView rightText) {
+        this.exercises = exercises;
+        this.exercises_singular = exercises_singular;
         this.spinner = thisSpinner;
         this.outputListView = outputList;
-        this.exercises = exercises;
         this.rightText = rightText;
     }
 
@@ -110,6 +129,7 @@ class InputTextWatcher implements TextWatcher {
 
     public void afterTextChanged(Editable s) {
         Log.i("Firing", "Callback");
+        this.outputListView.smoothScrollToPosition(0);
         float amountInput;
         try {
             amountInput = Float.parseFloat(s.toString());
@@ -128,11 +148,15 @@ class InputTextWatcher implements TextWatcher {
 
         List<String> values = new ArrayList<String>();
         float ratio;
-        String converted;
+        int converted;
         for (int i = 0; i < 12; ++i) {
             ratio = this.getRatio(pos, i);
-            converted = Integer.toString(Math.round(amountInput * ratio));
-            values.add(converted + " " + this.exercises[i]);
+            converted = Math.round(amountInput * ratio);
+            if (converted == 1) {
+                values.add(Integer.toString(converted) + " " + this.exercises_singular[i]);
+            } else {
+                values.add(Integer.toString(converted)+ " " + this.exercises[i]);
+            }
         }
 
         String[] valuesArray = values.toArray(new String[values.size()]);
