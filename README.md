@@ -12,10 +12,10 @@ See [your demo video title here] (https://link_to_your_video)
 
 ## Screenshots
 
-<img src="http://imgur.com/dUz4ZXH" height="400" />
-<img src="http://imgur.com/itY36Bw" height="400" />
-<img src="http://imgur.com/VWS0GZQ" height="400" />
-<img src="http://imgur.com/pZMWoFK" height="400" />
+<img src="http://imgur.com/dUz4ZXH.png" height="400" />
+<img src="http://imgur.com/itY36Bw.png" height="400" />
+<img src="http://imgur.com/VWS0GZQ.png" height="400" />
+<img src="http://imgur.com/pZMWoFK.png" height="400" />
 
 ## Acknowledgments
 
