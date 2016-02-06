@@ -8,7 +8,7 @@ Graham Seyffert ([gseyffert@berkeley.edu](mailto:gseyffert@berkeley.edu))
 
 ## Demo Video
 
-See [CrunchTime in action!] (https://youtu.be/eHNMxvXwdHE)
+See [CrunchTime in action!] ()
 
 ## Screenshots
 
